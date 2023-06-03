@@ -61,7 +61,7 @@ loginBtn.addEventListener("click", async (event)=>{
        if(data.token){
         localStorage.setItem("olxToken", JSON.stringify(data.token))
        window.alert("Successfully Login")
-       window.location.href="./pages/addproduct.html"
+       window.location.href="/pages/addproduct.html";
        return false;
     }else{
        window.alert("Wrong Credentials")
