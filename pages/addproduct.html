@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Product</title>
+    <link rel="stylesheet" href="../styles/addproduct.css">
+</head>
+<body>
+    <form class="form" id="addProduct">
+        <div class="title">Add Product</div>
+        <div class="input-container ic1">
+          <input id="name" class="input" type="text" placeholder="Name" />
+        </div>
+        <div class="input-container ic1">
+          <input id="image" class="input" type="text" placeholder="image" />
+        </div>
+        <div class="input-container ic1">
+          <input id="description" class="input" type="text" placeholder="description" />
+        </div>
+        <div class="input-container ic1">
+          <input id="location" class="input" type="text" placeholder="location" />
+        </div>
+       
+        <div class="input-container ic2">
+            <select  name="category" id="category">
+                <option value="">Select category</option>
+                <option value="clothing">clothing</option>
+                <option value="electronics">electronics</option>
+                <option value="furniture">furniture</option>
+                <option value="other">other</option>
+              </select>
+        </div>
+        <div class="input-container ic1">
+            <input id="postedAt" class="input" type="text" placeholder="postedAt " />
+        </div>
+        <div class="input-container ic1">
+            <input id="price" class="input" type="number" placeholder=" price" />
+        </div>
+          <input type="submit" class="submit" value="Submit" />
+        
+        
+
+    </form>
+</body>
+</html>
+<script src="../scripts/addproduct.js"></script>

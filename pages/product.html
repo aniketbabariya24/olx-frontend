@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/product.css">
+    <title>Freelancers</title>
+</head>
+<body>
+  <div id="mainDiv">
+    <div id="filter">
+        <select onchange="myPFChange()" id="myPf">       
+            <option value="">Select Category</option>
+            <option value="clothing">clothing</option>
+            <option value="electronics"> electronics</option>
+            <option value="furniture">furniture</option>
+            <option value="other">other</option>
+          </select>   
+          <button onclick="mysort()">Price: Low to High</button>
+          <button onclick="mysort2()">Price: High to Low</button>
+
+          <div id="update">
+            <h2>update Freelancer</h2>
+            <input type="text" id="mid"  placeholder="ID" />
+            <input type="text" id="upName"  placeholder="Name" />
+            <input type="text" id="updescription"  placeholder="Description" />
+            <input type="text" id="upImage"  placeholder="Image Url" />
+            <input type="text" id="upPro"  placeholder="Category" />
+            <input type="text" id="uplocation"  placeholder="Location" />
+            <input type="number" id="upRate"  placeholder="Price" />
+            <input type="text" id="upBook"  placeholder="postedAt" />
+            <button id="update-btn">
+              Update Product
+            </button>
+          </div>
+
+       </div>
+    <div id="myc">
+        <div id="container"></div>
+        <button id="prev">Previous</button><button id="next">Next</button>
+    </div>
+  </div>
+</body>
+</html>
+<script src="../scripts/product.js"></script>
