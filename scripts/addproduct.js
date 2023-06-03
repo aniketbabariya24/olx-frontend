@@ -25,4 +25,5 @@ let res= await fetch(`${url}/products/add`, {
     let data= await res.json();
     window.alert("Successfully Added.")
     window.location.href="product.html"
+    return false;
 }
