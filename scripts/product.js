@@ -67,7 +67,7 @@ myData.forEach((el, index)=>{
     deleteBtn.innerText="Delete";
     deleteBtn.style.backgroundColor="red"
     deleteBtn.onclick= async()=>{
-        let bookId= el.id;
+        let bookId= el._id;
         let res= await fetch(`${url}/products/delete/${bookId}`,{
           method:'DELETE',
           headers:{
