@@ -75,6 +75,7 @@ myData.forEach((el, index)=>{
           }
         });
          proData= await res.json();
+         window.alert("Delete Product")
          getFree(proData);
 
       }
